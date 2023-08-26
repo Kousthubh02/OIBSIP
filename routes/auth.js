@@ -95,14 +95,14 @@ router.post('/login', [
 // authtoken to use : "authToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjRhMDIzMDUwZjIwNWM2NDI3NDhhMmY3In0sImlhdCI6MTY4ODIxNjMyNn0.66bLU2Bt_uwOQEnPZsBt2qB4Er0dCF0QkraoY4EEZls"
 
 // Route 3: Get details of logged-in user
-router.get('/getuser', fetchuser, async (req, res) => {
-  try {
-    const user = await User.findById(req.user.id).select("-password");
-    return res.json(user);
-  } catch (error) {
-    console.error(error.message);
-    return res.status(500).send('Internal Server Error');
-  }
-});
+// router.get('/getuser', fetchuser, async (req, res) => {
+//   try {
+//     const user = await User.findById(req.user.id).select("-password");
+//     return res.json(user);
+//   } catch (error) {
+//     console.error(error.message);
+//     return res.status(500).send('Internal Server Error');
+//   }
+// });
 
 module.exports = router;

@@ -4,7 +4,7 @@ const connectToMongo = () => {
   const username = 'kyadavalli04';
   const password = 'Kousthubh%40mongo'; // Make sure to properly escape special characters in the password if required
   const clusterUrl = 'cluster0.2o0bzi6.mongodb.net';
-  const databaseName = 'login';
+  const databaseName = 'auth';
 
   const mongoURI = `mongodb+srv://${username}:${password}@${clusterUrl}/${databaseName}?retryWrites=true&w=majority`;
 
