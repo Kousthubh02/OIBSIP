@@ -7,7 +7,7 @@ Array.from(buttons).forEach((button)=>{
     eval(string);
     document.querySelector('input').value = string;
     }
-    else if(e.target.innerHTML =='C'){
+    else if(e.target.innerHTML =='AC'){
       string = ""
       document.querySelector('input').value = string;
     }
