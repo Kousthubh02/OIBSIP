@@ -1,0 +1,76 @@
+
+
+.container{
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(248, 250, 152);
+    
+}
+
+h2{
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Victor Mono', monospace;
+}
+
+body{
+    background-color: rgb(214, 241, 180);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.page{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.submit{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+
+#submitbtn{
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    background-color: rgb(155, 183, 242);
+
+}
+#submitbtn:hover{
+    padding: 0.7rem;
+    border-radius: 0.3rem;
+    background-color: rgb(45, 102, 226);
+    color: white;
+
+}
+
+
+#username{
+    width:13rem;
+    margin: 1rem;
+    margin-left: 2.5rem;
+    padding: 0.4rem;
+}
+
+#email{
+    width:13rem;
+    margin: 1rem;
+    margin-left: 2.5rem;
+    padding: 0.4rem;
+}
+#password{
+    width:13rem;
+    margin: 0.6rem;
+    padding: 0.4rem;
+}
+#reEnterPassword{
+    width:13rem;
+    margin: 0.6rem;
+    padding: 0.4rem;
+}
+
