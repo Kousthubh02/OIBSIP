@@ -8,7 +8,7 @@ btn.addEventListener('click', () => {
   const email = document.getElementById('email').value; // Get the current email value
   const password = document.getElementById('password').value; // Get the current password value
 
-  const data = {
+  const data = { 
     email: email,
     password: password
   };
@@ -26,7 +26,7 @@ btn.addEventListener('click', () => {
     })
     .then((res) => {
       console.log('Response:', res);
-      window.location.href='/congrats.html'
+      window.location.href='/login/congrats.html'
     })
     .catch((err) => {
       console.error('Error', err);

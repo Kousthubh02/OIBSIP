@@ -1,8 +1,16 @@
-let username = document.getElementById('username').value; 
+
+const btn = document.getElementById('submitbtn');
+
+
+const headers = {
+  'Content-Type': 'application/json',
+};
+
+btn.addEventListener('click', () => {
+  let username = document.getElementById('username').value; 
 let password = document.getElementById('password').value;
 let email = document.getElementById('email').value;
 
-const btn = document.getElementById('submitbtn');
 
 const data = {
   name: username,
@@ -10,11 +18,6 @@ const data = {
   password: password,
 };
 
-const headers = {
-  'Content-Type': 'application/json',
-};
-
-btn.addEventListener('click', () => {
   fetch('http://localhost:5000/api/auth/createuser', { // Added "http://" to the URL
     method: 'POST',
     body: JSON.stringify(data),
@@ -27,8 +30,8 @@ btn.addEventListener('click', () => {
       return res.json();
     })
     .then((response) => {
-      // Handle the response here
       console.log('Response:', response);
+      window.location.href='/register/congrats.html'
     })
     .catch((err) => {
       console.error('Error', err);
