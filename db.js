@@ -6,8 +6,8 @@ const connectToMongo = () => {
   const clusterUrl = 'cluster0.2o0bzi6.mongodb.net';
   const databaseName = 'auth';
 
-  const mongoURI = `mongodb+srv://${username}:${password}@${clusterUrl}/${databaseName}?retryWrites=true&w=majority`;
-
+  mongoURI= `mongodb+srv://${username}:${password}@${clusterUrl}/${databaseName}?retryWrites=true&w=majority`
+  
   mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
       console.log('Connected to MongoDB Atlas');
